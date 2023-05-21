@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<body>
+    <form action="">
+        <div>
+            <label for="name">Nome e sobrenome</label>
+            <br>
+            <input type="text" name="name" id="user-name" required>
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="user-email" required placeholder="seuemail@dominio.com">
+        </div>
+
+        <div>
+            <label for="phone">Telefone</label>
+            <br>
+            <input type="tel" name="phone" id="user-phone" required placeholder="(xx) xxxx-xxxx">
+        </div>
+
+        <div>
+            <label for="message">Mensagem</label>
+            <br>
+            <textarea name="message" id="user-message" cols="30" rows="5"></textarea>
+        </div>
+        
+        <fieldset>
+            <legend>Como prefere o nosso contato</legend>
+            <div>
+                <input type="radio" name="contact" id="whatsapp" checked value="whatsapp">
+                <label for="whatsapp">Whatsapp</label>
+            </div>
+            <div>
+                <input type="radio" name="contact" id="telefone" value="telefone">
+                <label for="telefone">Telefone</label>
+            </div>
+            <div>
+                <input type="radio" name="contact" id="email" value="email">
+                <label for="email">Email</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Como prefere ser atendido</legend>
+            <select name="atendimento" id="user-atendimento">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+        </fieldset>
+
+        <div>
+            <input type="checkbox" name="novidades" id="escolha-novidades">
+            <label for="novidades">Gostaria de receber nossas novidades por email?</label>
+        </div>
+    </form>
+    <button>Enviar formulário</button>
+
+    <div>
+        <br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Horário</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Segunda</td>
+                <td>8h-20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h-20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h-20h</td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <a href="barbearia.html">Voltar</a>
+    </div>
+</body>
+</html>
